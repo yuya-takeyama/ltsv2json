@@ -7,6 +7,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'json'
 require 'ltsv2json/version'
 
+trap('INT') { exit 130 }
+
 inputs = ARGV[0] ? ARGV.map {|f| open f } : [STDIN]
 inputs.each do |input|
   input.each_line do |line|
