@@ -3,8 +3,16 @@
 
 require 'json'
 require 'ltsv2json/version'
+require 'optparse'
 
 trap('INT') { exit 130 }
+
+opt = OptionParser.new
+
+opt.version = Ltsv2json::VERSION
+opt.banner  = "Usage: ltsv2json [FILE]..."
+
+opt.parse!(ARGV)
 
 inputs = ARGV[0] ? ARGV.map {|f| open f } : [STDIN]
 inputs.each do |input|
