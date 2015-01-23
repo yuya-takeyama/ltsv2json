@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sign.of.the.wolf.pentagram@gmail.com"]
   spec.summary       = %q{Command to convert from LTSV to JSON}
   spec.description   = %q{Command to convert from LTSV to JSON}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/yuya-takeyama/ltsv2json"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
