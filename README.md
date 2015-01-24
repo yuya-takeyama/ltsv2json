@@ -4,7 +4,7 @@ Command to convert from LTSV to JSON
 
 ## Installation
 
-    $ go get github.com/yuya-takeyama
+    $ go get github.com/yuya-takeyama/ltsv2json
 
 ## Usage
 
