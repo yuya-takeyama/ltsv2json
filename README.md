@@ -4,17 +4,7 @@ Command to convert from LTSV to JSON
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'ltsv2json'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ltsv2json
+    $ go get github.com/yuya-takeyama
 
 ## Usage
 
