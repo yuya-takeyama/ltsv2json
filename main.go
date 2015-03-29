@@ -4,10 +4,11 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/ymotongpoo/goltsv"
-	"github.com/yuya-takeyama/argf"
 	"io"
 	"os"
+
+	"github.com/ymotongpoo/goltsv"
+	"github.com/yuya-takeyama/argf"
 )
 
 const lf = byte('\n')
@@ -26,7 +27,7 @@ func main() {
 	}
 
 	if *displayVersion {
-		fmt.Fprintln(stdout, "ltsv2json 0.1.0")
+		fmt.Fprintf(stdout, "ltsv2json v%s, build %s\n", Version, GitCommit)
 		return
 	}
 
